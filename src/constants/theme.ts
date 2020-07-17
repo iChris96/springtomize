@@ -11,9 +11,9 @@ const palette = {
 };
 
 const appColors = {
-  accent: palette.orange,
-  primary: palette.red,
-  secondary: "#3949ab",
+  accent: palette.green,
+  primary: palette.orange,
+  secondary: palette.purple,
   tertiary: "#304ffe",
 };
 
