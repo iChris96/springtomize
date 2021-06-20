@@ -1,8 +1,8 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { withTheme, Button } from "react-native-paper";
+import { withTheme } from "react-native-paper";
 import { backgrounds } from "../constants/theme";
-import Title from "../components/Title";
+import { Title, Button } from "../components"
 
 const Home: React.FC = (props: any) => {
   const { colors } = props.theme;
@@ -12,15 +12,14 @@ const Home: React.FC = (props: any) => {
         <Title title={"Home Screen!"} />
       </View>
       <View style={styles.buttonsContainer}>
-        <Button mode="contained" onPress={() => console.log("Pressed")}>
+        <Button mode="contained" onPress={() => console.log("Pressed1")}>
           New Spring
         </Button>
         <Button
-          style={{ marginVertical: 10 }}
           mode="contained"
-          onPress={() => console.log("Pressed")}
+          onPress={() => console.log("Pressed2")}
         >
-          My Springs
+          {"My Springs"}
         </Button>
       </View>
     </View>
