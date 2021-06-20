@@ -12,10 +12,11 @@ const Header = () => {
   )
 }
 
-const Content = () => {
+const Content = ({ navigation }: any) => {
+  console.log(navigation)
   return (
     <View style={styles.buttonsContainer}>
-      <Button onPress={() => console.log("Pressed1")}>
+      <Button onPress={() => navigation.navigate('Spring')}>
         New Spring
       </Button>
       <Button
@@ -29,10 +30,11 @@ const Content = () => {
 
 const Home: React.FC = (props: any) => {
   const { colors } = props.theme;
+
   return (
     <View style={styles.container}>
       <Header />
-      <Content />
+      <Content {...props} />
     </View>
   );
 };
