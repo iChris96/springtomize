@@ -13,7 +13,6 @@ const Header = () => {
 }
 
 const Content = ({ navigation }: any) => {
-  console.log(navigation)
   return (
     <View style={styles.buttonsContainer}>
       <Button onPress={() => navigation.navigate('Spring')}>
